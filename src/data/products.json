@@ -1,0 +1,293 @@
+[
+  {
+    "id": "free-fire-diamonds-560",
+    "name": "Free Fire 560 Diamants",
+    "description": "Rechargez instantanément vos diamants Free Fire pour débloquer des skins exclusifs, des personnages et des armes légendaires. Livraison immédiate après achat.",
+    "price": 799,
+    "originalPrice": 999,
+    "categoryId": "mobile-games",
+    "images": [
+      "https://picsum.photos/600/400?random=1",
+      "https://picsum.photos/600/400?random=2"
+    ],
+    "tags": ["free-fire", "diamants", "recharge", "mobile"],
+    "badges": ["bestseller", "sale"],
+    "rating": 4.8,
+    "reviewCount": 2847,
+    "isDigital": true,
+    "features": [
+      "Livraison instantanée",
+      "Code valide mondialement", 
+      "Support 24/7",
+      "Garantie 100%"
+    ],
+    "fileSize": "Code numérique",
+    "supportedPlatforms": ["Android", "iOS"]
+  },
+  {
+    "id": "pubg-uc-690",
+    "name": "PUBG Mobile 690 UC",
+    "description": "Unknown Cash pour PUBG Mobile. Achetez des skins, des caisses et des objets exclusifs dans le jeu le plus populaire de battle royale.",
+    "price": 1299,
+    "categoryId": "mobile-games",
+    "images": [
+      "https://picsum.photos/600/400?random=3",
+      "https://picsum.photos/600/400?random=4"
+    ],
+    "tags": ["pubg", "uc", "unknown-cash", "battle-royale"],
+    "badges": ["popular", "new"],
+    "rating": 4.9,
+    "reviewCount": 1923,
+    "isDigital": true,
+    "features": [
+      "Activation immédiate",
+      "Compatible toutes régions",
+      "Pas de ban risk",
+      "Transaction sécurisée"
+    ],
+    "fileSize": "Code numérique",
+    "supportedPlatforms": ["Android", "iOS"]
+  },
+  {
+    "id": "steam-wallet-20eur",
+    "name": "Steam Wallet 20€",
+    "description": "Carte cadeau Steam pour acheter vos jeux, DLC et contenus favoris sur la plus grande plateforme de gaming PC.",
+    "price": 2199,
+    "categoryId": "pc-games",
+    "images": [
+      "https://picsum.photos/600/400?random=5",
+      "https://picsum.photos/600/400?random=6"
+    ],
+    "tags": ["steam", "wallet", "pc-gaming", "carte-cadeau"],
+    "badges": ["featured"],
+    "rating": 4.7,
+    "reviewCount": 5672,
+    "isDigital": true,
+    "features": [
+      "Code Steam officiel",
+      "Utilisable immédiatement",
+      "Pas d'expiration",
+      "Échange facile"
+    ],
+    "fileSize": "Code numérique",
+    "supportedPlatforms": ["Windows", "Mac", "Linux"]
+  },
+  {
+    "id": "netflix-premium-1month",
+    "name": "Netflix Premium 1 Mois",
+    "description": "Profitez d'un mois de Netflix Premium avec 4K Ultra HD, 4 écrans simultanés et téléchargements illimités.",
+    "price": 1799,
+    "originalPrice": 2199,
+    "categoryId": "streaming",
+    "images": [
+      "https://picsum.photos/600/400?random=7",
+      "https://picsum.photos/600/400?random=8"
+    ],
+    "tags": ["netflix", "streaming", "4k", "premium"],
+    "badges": ["sale", "popular"],
+    "rating": 4.6,
+    "reviewCount": 3421,
+    "isDigital": true,
+    "features": [
+      "Qualité 4K Ultra HD",
+      "4 écrans simultanés",
+      "Téléchargement offline",
+      "Catalogue complet"
+    ],
+    "fileSize": "Accès digital",
+    "supportedPlatforms": ["Tous appareils"]
+  },
+  {
+    "id": "spotify-premium-3months",
+    "name": "Spotify Premium 3 Mois",
+    "description": "3 mois de musique illimitée sans pub, écoute offline et qualité haute définition sur tous vos appareils.",
+    "price": 2999,
+    "categoryId": "streaming",
+    "images": [
+      "https://picsum.photos/600/400?random=9",
+      "https://picsum.photos/600/400?random=10"
+    ],
+    "tags": ["spotify", "musique", "premium", "streaming"],
+    "badges": ["new", "bestseller"],
+    "rating": 4.8,
+    "reviewCount": 1876,
+    "isDigital": true,
+    "features": [
+      "Écoute sans pub",
+      "Mode offline",
+      "Qualité High-Fi",
+      "Playlists illimitées"
+    ],
+    "fileSize": "Accès digital",
+    "supportedPlatforms": ["Mobile", "Desktop", "Web"]
+  },
+  {
+    "id": "adobe-photoshop-1year",
+    "name": "Adobe Photoshop CC 1 An",
+    "description": "Licence officielle Adobe Photoshop Creative Cloud pour un an. L'outil de référence pour l'édition d'images professionnelle.",
+    "price": 14999,
+    "categoryId": "productivity",
+    "images": [
+      "https://picsum.photos/600/400?random=11",
+      "https://picsum.photos/600/400?random=12"
+    ],
+    "tags": ["adobe", "photoshop", "design", "professionnel"],
+    "badges": ["featured", "popular"],
+    "rating": 4.9,
+    "reviewCount": 9234,
+    "isDigital": true,
+    "features": [
+      "Licence officielle Adobe",
+      "Mises à jour automatiques",
+      "Cloud storage 100GB",
+      "Support technique inclus"
+    ],
+    "fileSize": "3.2 GB",
+    "supportedPlatforms": ["Windows 10+", "macOS 10.14+"]
+  },
+  {
+    "id": "microsoft-office-365",
+    "name": "Microsoft Office 365 Personnel",
+    "description": "Suite bureautique complète Microsoft 365 pour une personne. Word, Excel, PowerPoint, Outlook et plus encore.",
+    "price": 6999,
+    "categoryId": "productivity",
+    "images": [
+      "https://picsum.photos/600/400?random=13",
+      "https://picsum.photos/600/400?random=14"
+    ],
+    "tags": ["microsoft", "office", "bureautique", "365"],
+    "badges": ["bestseller"],
+    "rating": 4.7,
+    "reviewCount": 7654,
+    "isDigital": true,
+    "features": [
+      "Word, Excel, PowerPoint",
+      "1TB OneDrive inclus",
+      "Versions mobile et web",
+      "Support Microsoft"
+    ],
+    "fileSize": "Variable",
+    "supportedPlatforms": ["Windows", "Mac", "Mobile", "Web"]
+  },
+  {
+    "id": "amazon-gift-card-50eur",
+    "name": "Carte Cadeau Amazon 50€",
+    "description": "Carte cadeau Amazon valable sur tous les produits. Parfait pour offrir ou pour vos propres achats sur la plateforme.",
+    "price": 5499,
+    "categoryId": "amazon-cards",
+    "images": [
+      "https://picsum.photos/600/400?random=15",
+      "https://picsum.photos/600/400?random=16"
+    ],
+    "tags": ["amazon", "carte-cadeau", "shopping", "gift"],
+    "badges": ["popular"],
+    "rating": 4.8,
+    "reviewCount": 4567,
+    "isDigital": true,
+    "features": [
+      "Utilisable immédiatement",
+      "Valable 10 ans",
+      "Tous produits Amazon",
+      "Transfert possible"
+    ],
+    "fileSize": "Code numérique",
+    "supportedPlatforms": ["Web Amazon"]
+  },
+  {
+    "id": "apple-app-store-25eur",
+    "name": "App Store & iTunes 25€",
+    "description": "Crédit App Store et iTunes pour acheter apps, jeux, musique, films et autres contenus sur l'écosystème Apple.",
+    "price": 2749,
+    "categoryId": "apple-cards",
+    "images": [
+      "https://picsum.photos/600/400?random=17",
+      "https://picsum.photos/600/400?random=18"
+    ],
+    "tags": ["apple", "app-store", "itunes", "ios"],
+    "badges": ["new"],
+    "rating": 4.6,
+    "reviewCount": 2341,
+    "isDigital": true,
+    "features": [
+      "Apps et jeux iOS",
+      "Musique iTunes",
+      "Films et séries",
+      "Stockage iCloud"
+    ],
+    "fileSize": "Code numérique",
+    "supportedPlatforms": ["iPhone", "iPad", "Mac", "Apple TV"]
+  },
+  {
+    "id": "ebook-crypto-trading-guide",
+    "name": "Guide Complet Crypto Trading 2024",
+    "description": "E-book de 300+ pages couvrant toutes les stratégies de trading crypto, l'analyse technique et la gestion des risques.",
+    "price": 3999,
+    "originalPrice": 5999,
+    "categoryId": "ebooks",
+    "images": [
+      "https://picsum.photos/600/400?random=19",
+      "https://picsum.photos/600/400?random=20"
+    ],
+    "tags": ["ebook", "crypto", "trading", "formation"],
+    "badges": ["sale", "bestseller"],
+    "rating": 4.9,
+    "reviewCount": 1234,
+    "isDigital": true,
+    "features": [
+      "300+ pages de contenu",
+      "Stratégies avancées",
+      "Cas d'études réels", 
+      "Mises à jour gratuites"
+    ],
+    "fileSize": "15 MB (PDF)",
+    "supportedPlatforms": ["Tous appareils PDF"]
+  },
+  {
+    "id": "web-template-ecommerce",
+    "name": "Template E-commerce React Pro",
+    "description": "Template e-commerce moderne et responsive en React/Next.js avec dashboard admin, paiement intégré et design premium.",
+    "price": 8999,
+    "categoryId": "templates",
+    "images": [
+      "https://picsum.photos/600/400?random=21",
+      "https://picsum.photos/600/400?random=22"
+    ],
+    "tags": ["template", "react", "ecommerce", "nextjs"],
+    "badges": ["featured", "new"],
+    "rating": 4.8,
+    "reviewCount": 567,
+    "isDigital": true,
+    "features": [
+      "Code source complet",
+      "Documentation détaillée",
+      "Design responsive",
+      "Support 6 mois"
+    ],
+    "fileSize": "45 MB (ZIP)",
+    "supportedPlatforms": ["React", "Next.js", "Node.js"]
+  },
+  {
+    "id": "trading-bot-mt4",
+    "name": "Robot Trading MT4 Pro",
+    "description": "Expert Advisor professionnel pour MetaTrader 4 avec stratégies optimisées et gestion automatique des risques.",
+    "price": 12999,
+    "categoryId": "trading-tools",
+    "images": [
+      "https://picsum.photos/600/400?random=23",
+      "https://picsum.photos/600/400?random=24"
+    ],
+    "tags": ["trading", "mt4", "robot", "forex"],
+    "badges": ["popular", "featured"],
+    "rating": 4.7,
+    "reviewCount": 891,
+    "isDigital": true,
+    "features": [
+      "Installation facile",
+      "Backtesting inclus",
+      "Support technique",
+      "Mises à jour gratuites"
+    ],
+    "fileSize": "2.5 MB (.ex4)",
+    "supportedPlatforms": ["MetaTrader 4"]
+  }
+]

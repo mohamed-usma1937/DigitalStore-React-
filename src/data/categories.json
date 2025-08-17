@@ -1,0 +1,176 @@
+[
+  {
+    "id": "gaming-recharges",
+    "name": "Recharges Jeux",
+    "slug": "recharges-jeux",
+    "description": "Recharges pour vos jeux mobiles et PC favoris",
+    "icon": "Gamepad2",
+    "gradient": "gradient-primary",
+    "productCount": 24,
+    "subcategories": [
+      {
+        "id": "mobile-games",
+        "name": "Jeux Mobile",
+        "slug": "jeux-mobile",
+        "description": "Free Fire, PUBG, Call of Duty Mobile",
+        "icon": "Smartphone",
+        "gradient": "gradient-accent",
+        "productCount": 15
+      },
+      {
+        "id": "pc-games",
+        "name": "Jeux PC",
+        "slug": "jeux-pc",
+        "description": "Steam, Epic Games, Battle.net",
+        "icon": "Monitor",
+        "gradient": "gradient-secondary",
+        "productCount": 9
+      }
+    ]
+  },
+  {
+    "id": "subscriptions",
+    "name": "Abonnements",
+    "slug": "abonnements",
+    "description": "Abonnements premium et services",
+    "icon": "Crown",
+    "gradient": "gradient-secondary",
+    "productCount": 18,
+    "subcategories": [
+      {
+        "id": "streaming",
+        "name": "Streaming",
+        "slug": "streaming",
+        "description": "Netflix, Spotify, YouTube Premium",
+        "icon": "Play",
+        "gradient": "gradient-primary",
+        "productCount": 8
+      },
+      {
+        "id": "gaming-subs",
+        "name": "Gaming",
+        "slug": "gaming-subs",
+        "description": "PSN Plus, Xbox Game Pass, Discord Nitro",
+        "icon": "Zap",
+        "gradient": "gradient-accent",
+        "productCount": 10
+      }
+    ]
+  },
+  {
+    "id": "software",
+    "name": "Logiciels",
+    "slug": "logiciels",
+    "description": "Licences logiciels et outils professionnels",
+    "icon": "Code2",
+    "gradient": "gradient-accent",
+    "productCount": 32,
+    "subcategories": [
+      {
+        "id": "productivity",
+        "name": "Productivité",
+        "slug": "productivite",
+        "description": "Office, Adobe, Google Workspace",
+        "icon": "FileText",
+        "gradient": "gradient-primary",
+        "productCount": 12
+      },
+      {
+        "id": "development",
+        "name": "Développement",
+        "slug": "developpement",
+        "description": "IDE, outils de développement",
+        "icon": "Terminal",
+        "gradient": "gradient-secondary",
+        "productCount": 20
+      }
+    ]
+  },
+  {
+    "id": "gift-cards",
+    "name": "Cartes Cadeaux",
+    "slug": "cartes-cadeaux",
+    "description": "Cartes cadeaux pour tous les services",
+    "icon": "Gift",
+    "gradient": "gradient-primary",
+    "productCount": 16,
+    "subcategories": [
+      {
+        "id": "amazon-cards",
+        "name": "Amazon",
+        "slug": "amazon",
+        "description": "Cartes cadeaux Amazon toutes régions",
+        "icon": "ShoppingBag",
+        "gradient": "gradient-accent",
+        "productCount": 6
+      },
+      {
+        "id": "apple-cards",
+        "name": "Apple",
+        "slug": "apple",
+        "description": "App Store et iTunes",
+        "icon": "Apple",
+        "gradient": "gradient-secondary",
+        "productCount": 10
+      }
+    ]
+  },
+  {
+    "id": "digital-content",
+    "name": "Contenu Numérique",
+    "slug": "contenu-numerique",
+    "description": "Ebooks, musique, templates et ressources",
+    "icon": "Download",
+    "gradient": "gradient-secondary",
+    "productCount": 28,
+    "subcategories": [
+      {
+        "id": "ebooks",
+        "name": "E-books",
+        "slug": "ebooks",
+        "description": "Livres numériques et audiobooks",
+        "icon": "BookOpen",
+        "gradient": "gradient-primary",
+        "productCount": 15
+      },
+      {
+        "id": "templates",
+        "name": "Templates",
+        "slug": "templates",
+        "description": "Templates web, design et business",
+        "icon": "Layout",
+        "gradient": "gradient-accent",
+        "productCount": 13
+      }
+    ]
+  },
+  {
+    "id": "crypto",
+    "name": "Crypto & Trading",
+    "slug": "crypto-trading",
+    "description": "Outils et formations crypto/trading",
+    "icon": "TrendingUp",
+    "gradient": "gradient-accent",
+    "productCount": 12,
+    "subcategories": [
+      {
+        "id": "trading-tools",
+        "name": "Outils Trading",
+        "slug": "outils-trading",
+        "description": "Indicateurs, bots et signaux",
+        "icon": "BarChart3",
+        "gradient": "gradient-secondary",
+        "productCount": 7
+      },
+      {
+        "id": "crypto-courses",
+        "name": "Formations",
+        "slug": "formations-crypto",
+        "description": "Cours et masterclass crypto",
+        "icon": "GraduationCap",
+        "gradient": "gradient-primary",
+        "productCount": 5
+      }
+    ]
+  }
+]
