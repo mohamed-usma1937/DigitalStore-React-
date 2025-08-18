@@ -112,7 +112,7 @@ export const messages = {
     'homepage.cta.createAccount': 'Créer un compte',
 
     // Footer Bottom
-    'footer.copyright': 'Tous droits réservés.',
+    'footer.copyright': 'Copyright © 2025 <a href="https://bouchelaghemmohamed.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors underline decoration-dotted hover:decoration-solid">Bouchelaghem Mohamed seddik</a>',
     'footer.marketplace': 'Marketplace de produits digitaux',
     'footer.instantDelivery': 'Livraison instantanée',
     'footer.support24': 'Support 24/7',
@@ -298,7 +298,7 @@ export const messages = {
     'homepage.cta.createAccount': 'Create account',
 
     // Footer Bottom
-    'footer.copyright': 'All rights reserved.',
+    'footer.copyright': 'Copyright © 2025 <a href="https://bouchelaghemmohamed.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors underline decoration-dotted hover:decoration-solid">Bouchelaghem Mohamed seddik</a>',
     'footer.marketplace': 'Digital products marketplace',
     'footer.instantDelivery': 'Instant delivery',
     'footer.support24': '24/7 Support',
@@ -484,7 +484,7 @@ export const messages = {
     'homepage.cta.createAccount': 'إنشاء حساب',
 
     // Footer Bottom
-    'footer.copyright': 'جميع الحقوق محفوظة.',
+    'footer.copyright': 'Copyright © 2025 <a href="https://bouchelaghemmohamed.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors underline decoration-dotted hover:decoration-solid">Bouchelaghem Mohamed seddik</a>',
     'footer.marketplace': 'سوق المنتجات الرقمية',
     'footer.instantDelivery': 'التسليم الفوري',
     'footer.support24': 'دعم 24/7',

@@ -188,7 +188,14 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-text-muted">
-              © {currentYear} {t('footer.company')}. {t('footer.copyright')}
+              Copyright © {currentYear} <a 
+                href="https://bouchelaghemmohamed.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary-dark transition-colors underline decoration-dotted hover:decoration-solid"
+              >
+                Bouchelaghem Mohamed seddik
+              </a>
             </p>
             <div className="flex items-center gap-4 text-xs text-text-muted">
               <span>{t('footer.marketplace')}</span>
