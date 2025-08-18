@@ -7,9 +7,11 @@ import { ProductCard } from '@/components/product/ProductCard';
 import { Product, Category } from '@/types';
 import productsData from '@/data/products.json';
 import categoriesData from '@/data/categories.json';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const CategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
+  const { t } = useTranslation();
   
   const products = productsData as Product[];
   const categories = categoriesData as Category[];
@@ -41,7 +43,7 @@ const CategoryPage = () => {
         <div className="text-center">
           <h1 className="text-2xl font-bold text-text-primary mb-4">Catégorie non trouvée</h1>
           <Button asChild variant="outline">
-            <Link to="/categories">Retour aux catégories</Link>
+            <Link to="/categories">{t('product.backToCategories')}</Link>
           </Button>
         </div>
       </div>
@@ -97,10 +99,10 @@ const CategoryPage = () => {
               
               <div className="flex items-center gap-4">
                 <Badge variant="outline">
-                  {categoryProducts.length} produits disponibles
+                  {categoryProducts.length} {t('categories.productsAvailable')}
                 </Badge>
                 <Badge variant="glass">
-                  Livraison instantanée
+                  {t('categories.instantDelivery')}
                 </Badge>
               </div>
             </div>
@@ -112,15 +114,15 @@ const CategoryPage = () => {
           <div className="flex items-center gap-4">
             <Button variant="outline" size="sm">
               <Filter className="h-4 w-4 mr-2" />
-              Filtres
+              {t('categories.filters')}
             </Button>
             <Button variant="ghost" size="sm">
               <Grid className="h-4 w-4 mr-2" />
-              Grille
+              {t('categories.grid')}
             </Button>
             <Button variant="ghost" size="sm">
               <List className="h-4 w-4 mr-2" />
-              Liste
+              {t('categories.list')}
             </Button>
           </div>
 
@@ -147,7 +149,7 @@ const CategoryPage = () => {
             </p>
             <Button variant="outline" asChild>
               <Link to="/categories">
-                Explorer d'autres catégories
+                {t('categories.exploreOther')}
               </Link>
             </Button>
           </div>
@@ -157,7 +159,7 @@ const CategoryPage = () => {
         {categoryProducts.length > 12 && (
           <div className="text-center mt-12">
             <Button variant="outline" size="lg">
-              Charger plus de produits
+              {t('categories.loadMore')}
             </Button>
           </div>
         )}

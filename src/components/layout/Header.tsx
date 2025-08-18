@@ -171,17 +171,17 @@ export function Header() {
                   <Link to="/account">{t('nav.account')}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/orders">Mes commandes</Link>
+                  <Link to="/orders">{t('auth.myOrders')}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={logout} className="text-danger">
-                  Déconnexion
+                  {t('auth.logout')}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
             <Button asChild variant="outline" size="sm">
-              <Link to="/login">Connexion</Link>
+              <Link to="/login">{t('auth.login')}</Link>
             </Button>
           )}
 
@@ -200,25 +200,25 @@ export function Header() {
               to="/categories" 
               className="text-sm font-medium text-text-secondary hover:text-primary transition-colors whitespace-nowrap"
             >
-              {t('categories.all')}
+              {t('navigation.allCategories')}
             </Link>
             <Link 
               to="/categories/gaming-recharges" 
               className="text-sm font-medium text-text-secondary hover:text-primary transition-colors whitespace-nowrap"
             >
-              {t('categories.gaming')}
+              {t('navigation.gamingRecharges')}
             </Link>
             <Link 
               to="/categories/software" 
               className="text-sm font-medium text-text-secondary hover:text-primary transition-colors whitespace-nowrap"
             >
-              {t('categories.software')}
+              {t('navigation.software')}
             </Link>
             <Link 
               to="/categories/subscriptions" 
               className="text-sm font-medium text-text-secondary hover:text-primary transition-colors whitespace-nowrap"
             >
-              {t('categories.subscriptions')}
+              {t('navigation.subscriptions')}
             </Link>
           </nav>
         </div>

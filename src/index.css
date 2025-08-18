@@ -28,21 +28,21 @@
     --popover-foreground: 210 40% 98%;
 
     /* Vibrant Accent Colors */
-    --primary: 190 100% 50%;         /* Cyan électrique #00BCD4 */
-    --primary-hover: 190 100% 45%;   
-    --primary-foreground: 222 47% 7%;
+    --primary: 142 76% 36%;          /* Vert #16A34A */
+    --primary-hover: 142 76% 32%;    
+    --primary-foreground: 0 0% 0%;   /* Noir pour contraste optimal sur vert */
 
-    --secondary: 270 100% 70%;       /* Violet néon #A855F7 */
-    --secondary-hover: 270 100% 65%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 13% 91%;        /* Gris clair #E5E7EB */
+    --secondary-hover: 220 13% 87%;
+    --secondary-foreground: 0 0% 0%; /* Noir pour contraste optimal sur gris clair */
 
-    --accent: 320 100% 70%;          /* Fuchsia #F472B6 */
-    --accent-hover: 320 100% 65%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 220 13% 91%;           /* Gris clair #E5E7EB */
+    --accent-hover: 220 13% 87%;
+    --accent-foreground: 0 0% 0%;    /* Noir pour contraste optimal sur gris clair */
 
     --success: 150 100% 50%;         /* Lime #00FF7F */
     --success-hover: 150 100% 45%;
-    --success-foreground: 222 47% 7%;
+    --success-foreground: 0 0% 0%;   /* Noir pour contraste optimal sur vert lime */
 
     --warning: 45 100% 60%;          /* Orange vif */
     --warning-foreground: 222 47% 7%;
@@ -62,17 +62,17 @@
     --border: 222 35% 15%;           /* Bordures subtiles */
     --border-muted: 222 35% 12%;     /* Bordures très subtiles */
     --input: 222 35% 11%;            /* Background inputs */
-    --ring: 190 100% 50%;            /* Focus ring cyan */
+    --ring: 142 76% 36%;             /* Focus ring vert */
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(190 100% 50%), hsl(270 100% 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(270 100% 70%), hsl(320 100% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(320 100% 70%), hsl(190 100% 50%));
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(220 13% 91%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 13% 91%), hsl(142 76% 36%));
+    --gradient-accent: linear-gradient(135deg, hsl(220 13% 91%), hsl(142 76% 36%));
     --gradient-dark: linear-gradient(135deg, hsl(222 47% 7%), hsl(222 35% 11%));
 
     /* Shadows */
-    --shadow-glow: 0 0 30px hsl(190 100% 50% / 0.3);
-    --shadow-glow-secondary: 0 0 30px hsl(270 100% 70% / 0.3);
+    --shadow-glow: 0 0 30px hsl(142 76% 36% / 0.3);
+    --shadow-glow-secondary: 0 0 30px hsl(220 13% 91% / 0.3);
     --shadow-elegant: 0 10px 30px -10px hsl(222 47% 4% / 0.8);
     --shadow-card: 0 4px 20px -4px hsl(222 47% 4% / 0.6);
 
@@ -111,6 +111,30 @@
 
   .glass-card {
     @apply glass rounded-2xl shadow-card;
+  }
+
+  /* Boutons avec fond vert et texte noir */
+  .btn-green-black {
+    background-color: hsl(var(--primary));
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .btn-green-black:hover {
+    background-color: hsl(var(--primary-hover));
+    color: #000000;
+  }
+
+  /* Boutons avec fond gris clair et texte noir */
+  .btn-gray-black {
+    background-color: hsl(var(--secondary));
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .btn-gray-black:hover {
+    background-color: hsl(var(--secondary-hover));
+    color: #000000;
   }
 
   /* Gradient text */

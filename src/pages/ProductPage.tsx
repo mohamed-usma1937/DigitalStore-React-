@@ -17,6 +17,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useCartStore } from '@/stores/useCartStore';
 import { useWishlistStore } from '@/stores/useWishlistStore';
 import { useUIStore } from '@/stores/useUIStore';
+import { useTranslation } from '@/hooks/useTranslation';
 import { formatCurrency } from '@/utils/currency';
 import { Product } from '@/types';
 import productsData from '@/data/products.json';
@@ -29,6 +30,7 @@ const ProductPage = () => {
   const { addItem } = useCartStore();
   const { addItem: addToWishlist, removeItem: removeFromWishlist, isInWishlist } = useWishlistStore();
   const { currency } = useUIStore();
+  const { t } = useTranslation();
   
   const products = productsData as Product[];
   const product = products.find(p => p.id === productId);
@@ -68,9 +70,9 @@ const ProductPage = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-text-primary mb-4">Produit non trouvé</h1>
+          <h1 className="text-2xl font-bold text-text-primary mb-4">{t('product.notFound')}</h1>
           <Button asChild variant="outline">
-            <Link to="/categories">Retour aux catégories</Link>
+            <Link to="/categories">{t('product.backToCategories')}</Link>
           </Button>
         </div>
       </div>
@@ -82,12 +84,12 @@ const ProductPage = () => {
       <div className="container mx-auto px-4">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-text-muted mb-8">
-          <Link to="/" className="hover:text-primary transition-colors">Accueil</Link>
+          <Link to="/" className="hover:text-primary transition-colors">{t('product.home')}</Link>
           <span>/</span>
-          <Link to="/categories" className="hover:text-primary transition-colors">Catégories</Link>
+          <Link to="/categories" className="hover:text-primary transition-colors">{t('nav.categories')}</Link>
           <span>/</span>
           <Link to={`/categories/${product.categoryId}`} className="hover:text-primary transition-colors">
-            Catégorie
+            {t('product.category')}
           </Link>
           <span>/</span>
           <span className="text-text-primary line-clamp-1">{product.name}</span>
@@ -138,11 +140,7 @@ const ProductPage = () => {
                     variant={badge as any}
                     className="text-xs"
                   >
-                    {badge === 'new' && 'Nouveau'}
-                    {badge === 'bestseller' && 'Best-seller'}
-                    {badge === 'sale' && 'Promo'}
-                    {badge === 'popular' && 'Populaire'}
-                    {badge === 'featured' && 'Mis en avant'}
+                    {t(`badge.${badge}`)}
                   </Badge>
                 ))}
                 {hasDiscount && (
@@ -171,7 +169,7 @@ const ProductPage = () => {
                   ))}
                 </div>
                 <span className="text-sm text-text-muted">
-                  {product.rating} ({product.reviewCount} avis)
+                  {product.rating} ({product.reviewCount} {t('product.reviews')})
                 </span>
               </div>
 
@@ -196,15 +194,15 @@ const ProductPage = () => {
             <div className="grid grid-cols-3 gap-4 p-4 glass-card rounded-2xl">
               <div className="text-center">
                 <Zap className="h-6 w-6 text-success mx-auto mb-2" />
-                <p className="text-xs text-text-muted">Livraison instantanée</p>
+                <p className="text-xs text-text-muted">{t('product.garantees.instant')}</p>
               </div>
               <div className="text-center">
                 <Shield className="h-6 w-6 text-primary mx-auto mb-2" />
-                <p className="text-xs text-text-muted">Paiement sécurisé</p>
+                <p className="text-xs text-text-muted">{t('product.garantees.secure')}</p>
               </div>
               <div className="text-center">
                 <Download className="h-6 w-6 text-accent mx-auto mb-2" />
-                <p className="text-xs text-text-muted">Téléchargement garanti</p>
+                <p className="text-xs text-text-muted">{t('product.garantees.download')}</p>
               </div>
             </div>
 
@@ -218,7 +216,7 @@ const ProductPage = () => {
                   size="lg"
                 >
                   <ShoppingCart className="h-5 w-5 mr-2" />
-                  Ajouter au panier
+                  {t('product.addToCartButton')}
                 </Button>
                 
                 <Button
@@ -235,7 +233,7 @@ const ProductPage = () => {
               </div>
 
               <Button variant="hero" size="lg" className="w-full">
-                Acheter maintenant
+                {t('product.buyNow')}
               </Button>
             </div>
           </div>
@@ -245,15 +243,15 @@ const ProductPage = () => {
         <div className="mb-16">
           <Tabs defaultValue="features" className="w-full">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="features">Caractéristiques</TabsTrigger>
-              <TabsTrigger value="details">Détails</TabsTrigger>
-              <TabsTrigger value="reviews">Avis</TabsTrigger>
+              <TabsTrigger value="features">{t('product.tabs.features')}</TabsTrigger>
+              <TabsTrigger value="details">{t('product.tabs.details')}</TabsTrigger>
+              <TabsTrigger value="reviews">{t('product.tabs.reviews')}</TabsTrigger>
             </TabsList>
             
             <TabsContent value="features" className="mt-6">
               <div className="glass-card p-6">
                 <h3 className="text-xl font-semibold text-text-primary mb-4">
-                  Caractéristiques principales
+                  {t('product.tabs.features')}
                 </h3>
                 {product.features && product.features.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -265,7 +263,7 @@ const ProductPage = () => {
                     ))}
                   </div>
                 ) : (
-                  <p className="text-text-muted">Aucune caractéristique spécifiée.</p>
+                  <p className="text-text-muted">{t('product.noFeatures')}</p>
                 )}
               </div>
             </TabsContent>
@@ -273,26 +271,26 @@ const ProductPage = () => {
             <TabsContent value="details" className="mt-6">
               <div className="glass-card p-6">
                 <h3 className="text-xl font-semibold text-text-primary mb-4">
-                  Informations détaillées
+                  {t('product.tabs.details')}
                 </h3>
                 <div className="space-y-4">
                   {product.fileSize && (
                     <div className="flex justify-between">
-                      <span className="text-text-muted">Taille du fichier :</span>
+                      <span className="text-text-muted">{t('product.fileSize')}</span>
                       <span className="text-text-primary">{product.fileSize}</span>
                     </div>
                   )}
                   {product.supportedPlatforms && (
                     <div className="flex justify-between">
-                      <span className="text-text-muted">Plateformes supportées :</span>
+                      <span className="text-text-muted">{t('product.supportedPlatforms')}</span>
                       <span className="text-text-primary">
                         {product.supportedPlatforms.join(', ')}
                       </span>
                     </div>
                   )}
                   <div className="flex justify-between">
-                    <span className="text-text-muted">Type de produit :</span>
-                    <span className="text-text-primary">Produit numérique</span>
+                    <span className="text-text-muted">{t('product.productType')}</span>
+                    <span className="text-text-primary">{t('product.digitalProduct')}</span>
                   </div>
                 </div>
               </div>
@@ -301,11 +299,11 @@ const ProductPage = () => {
             <TabsContent value="reviews" className="mt-6">
               <div className="glass-card p-6">
                 <h3 className="text-xl font-semibold text-text-primary mb-4">
-                  Avis clients ({product.reviewCount})
+                  {t('product.tabs.reviews')} ({product.reviewCount})
                 </h3>
                 <div className="text-center py-8">
                   <p className="text-text-muted">
-                    Les avis clients seront bientôt disponibles.
+                    {t('product.reviewsComingSoon')}
                   </p>
                 </div>
               </div>
@@ -317,7 +315,7 @@ const ProductPage = () => {
         {relatedProducts.length > 0 && (
           <div>
             <h2 className="text-2xl font-bold text-text-primary mb-8">
-              Produits similaires
+              {t('product.relatedProducts')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {relatedProducts.map((relatedProduct) => (

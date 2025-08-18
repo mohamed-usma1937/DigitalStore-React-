@@ -148,12 +148,12 @@ export default {
 					'100%': { transform: 'translateY(0)', opacity: '1' }
 				},
 				glow: {
-					'0%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.3)' },
-					'100%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.6)' }
+					'0%': { boxShadow: '0 0 20px hsl(142 76% 36% / 0.3)' },
+					'100%': { boxShadow: '0 0 40px hsl(142 76% 36% / 0.6)' }
 				},
 				pulseGlow: {
-					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.4)' },
-					'50%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.8)' }
+					'0%, 100%': { boxShadow: '0 0 20px hsl(142 76% 36% / 0.4)' },
+					'50%': { boxShadow: '0 0 40px hsl(142 76% 36% / 0.8)' }
 				}
 			}
 		}

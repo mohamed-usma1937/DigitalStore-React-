@@ -3,10 +3,11 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { useUIStore } from "@/stores/useUIStore";
+import { useTranslation } from "@/hooks/useTranslation";
 
 // Lazy load pages for better performance
 const Index = lazy(() => import("./pages/Index"));
@@ -25,19 +26,28 @@ const queryClient = new QueryClient();
 
 // Loading component
 function PageLoader() {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="flex items-center gap-3">
         <div className="w-8 h-8 bg-gradient-primary rounded-xl animate-pulse"></div>
-        <span className="text-text-muted">Chargement...</span>
+        <span className="text-text-muted">{t('common.loading')}</span>
       </div>
     </div>
   );
 }
 
 const App = () => {
-  // Initialize UI store to set initial theme
-  useUIStore();
+  // Initialize UI store to set initial theme and language
+  const { language, setLanguage } = useUIStore();
+  
+  // Ensure default language is set
+  React.useEffect(() => {
+    if (!language) {
+      setLanguage('fr');
+    }
+  }, [language, setLanguage]);
 
   return (
     <QueryClientProvider client={queryClient}>

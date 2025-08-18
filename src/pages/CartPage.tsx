@@ -3,20 +3,22 @@ import { ShoppingCart, Trash2, Plus, Minus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCartStore } from '@/stores/useCartStore';
 import { useUIStore } from '@/stores/useUIStore';
+import { useTranslation } from '@/hooks/useTranslation';
 import { formatCurrency } from '@/utils/currency';
 
 const CartPage = () => {
   const { items, updateQuantity, removeItem, getTotalPrice, clearCart } = useCartStore();
   const { currency } = useUIStore();
+  const { t } = useTranslation();
 
   if (items.length === 0) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <ShoppingCart className="h-16 w-16 text-text-muted mx-auto mb-4" />
-          <h1 className="text-2xl font-bold text-text-primary mb-4">Votre panier est vide</h1>
+          <h1 className="text-2xl font-bold text-text-primary mb-4">{t('cart.emptyTitle')}</h1>
           <Button asChild variant="hero">
-            <Link to="/categories">Découvrir nos produits</Link>
+            <Link to="/categories">{t('cart.discoverProducts')}</Link>
           </Button>
         </div>
       </div>
@@ -26,7 +28,7 @@ const CartPage = () => {
   return (
     <div className="min-h-screen py-8">
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold text-text-primary mb-8">Mon Panier</h1>
+        <h1 className="text-3xl font-bold text-text-primary mb-8">{t('cart.myCart')}</h1>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-4">
@@ -71,15 +73,15 @@ const CartPage = () => {
           </div>
 
           <div className="glass-card p-6 h-fit">
-            <h3 className="text-xl font-semibold text-text-primary mb-4">Récapitulatif</h3>
+            <h3 className="text-xl font-semibold text-text-primary mb-4">{t('cart.orderSummary')}</h3>
             <div className="space-y-2 mb-6">
               <div className="flex justify-between">
-                <span>Total</span>
+                <span>{t('cart.total')}</span>
                 <span className="font-bold text-primary">{formatCurrency(getTotalPrice(), currency)}</span>
               </div>
             </div>
             <Button asChild variant="cart" size="lg" className="w-full">
-              <Link to="/checkout">Passer commande</Link>
+              <Link to="/checkout">{t('cart.checkout')}</Link>
             </Button>
           </div>
         </div>

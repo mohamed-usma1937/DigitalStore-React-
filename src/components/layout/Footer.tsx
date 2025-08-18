@@ -23,18 +23,18 @@ const socialLinks = [
 const trustFeatures = [
   {
     icon: Truck,
-    title: 'Livraison Instantanée',
-    description: 'Téléchargement immédiat après achat'
+    titleKey: 'footer.features.instantDelivery.title',
+    descriptionKey: 'footer.features.instantDelivery.description'
   },
   {
     icon: Shield,
-    title: 'Paiement Sécurisé',
-    description: 'Transactions cryptées et protégées'
+    titleKey: 'footer.features.securePayment.title',
+    descriptionKey: 'footer.features.securePayment.description'
   },
   {
     icon: Headphones,
-    title: 'Support 24/7',
-    description: 'Assistance disponible en permanence'
+    titleKey: 'footer.features.support247.title',
+    descriptionKey: 'footer.features.support247.description'
   },
 ];
 
@@ -53,8 +53,8 @@ export function Footer() {
                 <feature.icon className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="font-semibold text-text-primary">{feature.title}</h3>
-                <p className="text-sm text-text-muted">{feature.description}</p>
+                <h3 className="font-semibold text-text-primary">{t(feature.titleKey)}</h3>
+                <p className="text-sm text-text-muted">{t(feature.descriptionKey)}</p>
               </div>
             </div>
           ))}
@@ -101,31 +101,31 @@ export function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-text-primary">Navigation</h3>
+            <h3 className="font-semibold text-text-primary">{t('nav.categories')}</h3>
             <nav className="space-y-2">
               <Link 
                 to="/categories" 
                 className="block text-sm text-text-muted hover:text-primary transition-colors"
               >
-                Toutes les catégories
+                {t('navigation.allCategories')}
               </Link>
               <Link 
                 to="/categories/gaming-recharges" 
                 className="block text-sm text-text-muted hover:text-primary transition-colors"
               >
-                Gaming & Recharges
+                {t('navigation.gamingRecharges')}
               </Link>
               <Link 
                 to="/categories/software" 
                 className="block text-sm text-text-muted hover:text-primary transition-colors"
               >
-                Logiciels & Outils
+                {t('navigation.software')}
               </Link>
               <Link 
                 to="/categories/subscriptions" 
                 className="block text-sm text-text-muted hover:text-primary transition-colors"
               >
-                Abonnements Premium
+                {t('navigation.subscriptions')}
               </Link>
             </nav>
           </div>
@@ -176,7 +176,7 @@ export function Footer() {
                 to="/legal/refunds" 
                 className="block text-sm text-text-muted hover:text-primary transition-colors"
               >
-                Politique de remboursement
+                {t('footer.refunds')}
               </Link>
             </nav>
           </div>
@@ -188,14 +188,14 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-text-muted">
-              © {currentYear} DigitalStore Pro. Tous droits réservés.
+              © {currentYear} {t('footer.company')}. {t('footer.copyright')}
             </p>
             <div className="flex items-center gap-4 text-xs text-text-muted">
-              <span>Marketplace de produits digitaux</span>
+              <span>{t('footer.marketplace')}</span>
               <span>•</span>
-              <span>Livraison instantanée</span>
+              <span>{t('footer.instantDelivery')}</span>
               <span>•</span>
-              <span>Support 24/7</span>
+              <span>{t('footer.support24')}</span>
             </div>
           </div>
         </div>

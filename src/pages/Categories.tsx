@@ -5,8 +5,10 @@ import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import { Category } from '@/types';
 import categoriesData from '@/data/categories.json';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const Categories = () => {
+  const { t } = useTranslation();
   const categories = categoriesData as Category[];
 
   return (
@@ -28,7 +30,7 @@ const Categories = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-text-muted" />
             <Input
               type="search"
-              placeholder="Rechercher une catégorie..."
+              placeholder={t('categories.searchPlaceholder')}
               className="pl-10 bg-background-secondary border-border"
             />
           </div>
@@ -55,7 +57,7 @@ const Categories = () => {
                   </h3>
                   <p className="text-text-muted mb-4 leading-relaxed">{category.description}</p>
                   <Badge variant="outline" className="mb-4">
-                    {category.productCount} produits
+                    {category.productCount} {t('categories.productsCount')}
                   </Badge>
                   
                   {/* Subcategories if any */}

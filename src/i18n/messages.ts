@@ -64,6 +64,125 @@ export const messages = {
     'badge.sale': 'Promo',
     'badge.popular': 'Populaire',
     'badge.featured': 'Mis en avant',
+
+    // Auth & Account
+    'auth.login': 'Connexion',
+    'auth.logout': 'Déconnexion',
+    'auth.myOrders': 'Mes commandes',
+    'auth.createAccount': 'Créer un compte',
+
+    // Hero Features
+    'hero.features.instantDelivery.title': 'Livraison Instantanée',
+    'hero.features.instantDelivery.description': 'Téléchargez vos produits immédiatement après achat',
+    'hero.features.securePayment.title': 'Paiement Sécurisé',
+    'hero.features.securePayment.description': 'Transactions protégées et cryptées',
+    'hero.features.support247.title': 'Support 24/7',
+    'hero.features.support247.description': 'Assistance disponible en permanence',
+
+    // Footer Features
+    'footer.features.instantDelivery.title': 'Livraison Instantanée',
+    'footer.features.instantDelivery.description': 'Téléchargement immédiat après achat',
+    'footer.features.securePayment.title': 'Paiement Sécurisé',
+    'footer.features.securePayment.description': 'Transactions cryptées et protégées',
+    'footer.features.support247.title': 'Support 24/7',
+    'footer.features.support247.description': 'Assistance disponible en permanence',
+
+    // Navigation Menu
+    'navigation.allCategories': 'Toutes les catégories',
+    'navigation.gamingRecharges': 'Gaming & Recharges',
+    'navigation.software': 'Logiciels & Outils',
+    'navigation.subscriptions': 'Abonnements Premium',
+
+    // Homepage Sections
+    'homepage.hero.badge': '🚀 Plus de 1000 produits digitaux disponibles',
+    'homepage.hero.searchPlaceholder': 'Rechercher des jeux, logiciels, abonnements...',
+    'homepage.categories.title': 'Explorez nos catégories',
+    'homepage.categories.subtitle': 'Trouvez exactement ce que vous cherchez',
+    'homepage.categories.viewAll': 'Voir toutes les catégories',
+    'homepage.categories.productsCount': 'produits',
+    'homepage.featured.title': 'Produits Mis en Avant',
+    'homepage.featured.subtitle': 'Nos recommandations premium pour vous',
+    'homepage.featured.viewAll': 'Voir tout',
+    'homepage.new.title': 'Nouveautés',
+    'homepage.bestsellers.title': 'Best-Sellers',
+    'homepage.promotions.title': 'Promotions',
+    'homepage.cta.title': 'Prêt à découvrir nos produits premium ?',
+    'homepage.cta.subtitle': 'Rejoignez des milliers d\'utilisateurs satisfaits et accédez instantanément à nos produits digitaux de qualité.',
+    'homepage.cta.explore': 'Explorer les produits',
+    'homepage.cta.createAccount': 'Créer un compte',
+
+    // Footer Bottom
+    'footer.copyright': 'Tous droits réservés.',
+    'footer.marketplace': 'Marketplace de produits digitaux',
+    'footer.instantDelivery': 'Livraison instantanée',
+    'footer.support24': 'Support 24/7',
+    'footer.refunds': 'Politique de remboursement',
+
+    // Common product terms
+    'product.priceUnit': 'د.ج',
+    'product.discount': '-%',
+    'product.newBadge': 'Nouveau',
+    'product.bestsellerBadge': 'Best-Seller',
+    'product.saleBadge': 'Promo',
+
+    // Cart Page
+    'cart.emptyTitle': 'Votre panier est vide',
+    'cart.discoverProducts': 'Découvrir nos produits',
+    'cart.myCart': 'Mon Panier',
+    'cart.clearAll': 'Vider le panier',
+    'cart.orderSummary': 'Récapitulatif de commande',
+
+    // Product Page
+    'product.notFound': 'Produit non trouvé',
+    'product.backToCategories': 'Retour aux catégories',
+    'product.home': 'Accueil',
+    'product.category': 'Catégorie',
+    'product.buyNow': 'Acheter maintenant',
+    'product.shareProduct': 'Partager ce produit',
+    'product.copyLink': 'Copier le lien',
+    'product.linkCopied': 'Lien copié !',
+    'product.description': 'Description',
+    'product.specifications': 'Spécifications',
+    'product.relatedProducts': 'Produits similaires',
+    'product.quantity': 'Quantité',
+    'product.addToCartButton': 'Ajouter au panier',
+    'product.addToWishlistButton': 'Ajouter aux favoris',
+    'product.removeFromWishlist': 'Retirer des favoris',
+    'product.garantees.instant': 'Livraison instantanée',
+    'product.garantees.secure': 'Paiement sécurisé',
+    'product.garantees.download': 'Téléchargement garanti',
+    'product.garantees.support': 'Support 24/7',
+    'product.tabs.features': 'Caractéristiques',
+    'product.tabs.details': 'Détails',
+    'product.tabs.reviews': 'Avis',
+    'product.noFeatures': 'Aucune caractéristique spécifiée.',
+    'product.fileSize': 'Taille du fichier :',
+    'product.supportedPlatforms': 'Plateformes supportées :',
+    'product.productType': 'Type de produit :',
+    'product.digitalProduct': 'Produit numérique',
+    'product.reviewsComingSoon': 'Les avis clients seront bientôt disponibles.',
+    'product.viewAll': 'Voir tout',
+
+    // Pages
+    'pages.login.title': 'Connexion',
+    'pages.checkout.title': 'Finalisation de commande',
+    'pages.search.title': 'Recherche',
+    'pages.account.title': 'Mon Compte',
+    'pages.wishlist.title': 'Ma Liste de Souhaits',
+    'pages.inDevelopment': 'Fonctionnalité en cours de développement...',
+    'pages.backToHome': 'Retour à l\'accueil',
+    'pages.backToCart': 'Retour au panier',
+    'pages.discoverProducts': 'Découvrir les produits',
+    
+    // Missing translations for hardcoded text
+    'categories.searchPlaceholder': 'Rechercher une catégorie...',
+    'categories.productsAvailable': 'produits disponibles',
+    'categories.instantDelivery': 'Livraison instantanée',
+    'categories.filters': 'Filtres',
+    'categories.grid': 'Grille',
+    'categories.list': 'Liste',
+    'categories.exploreOther': 'Explorer d\'autres catégories',
+    'categories.loadMore': 'Charger plus de produits',
   },
   
   en: {
@@ -131,6 +250,125 @@ export const messages = {
     'badge.sale': 'Sale',
     'badge.popular': 'Popular',
     'badge.featured': 'Featured',
+
+    // Auth & Account
+    'auth.login': 'Login',
+    'auth.logout': 'Logout',
+    'auth.myOrders': 'My Orders',
+    'auth.createAccount': 'Create Account',
+
+    // Hero Features
+    'hero.features.instantDelivery.title': 'Instant Delivery',
+    'hero.features.instantDelivery.description': 'Download your products immediately after purchase',
+    'hero.features.securePayment.title': 'Secure Payment',
+    'hero.features.securePayment.description': 'Protected and encrypted transactions',
+    'hero.features.support247.title': '24/7 Support',
+    'hero.features.support247.description': 'Assistance available at all times',
+
+    // Footer Features
+    'footer.features.instantDelivery.title': 'Instant Delivery',
+    'footer.features.instantDelivery.description': 'Immediate download after purchase',
+    'footer.features.securePayment.title': 'Secure Payment',
+    'footer.features.securePayment.description': 'Encrypted and protected transactions',
+    'footer.features.support247.title': '24/7 Support',
+    'footer.features.support247.description': 'Assistance available permanently',
+
+    // Navigation Menu
+    'navigation.allCategories': 'All Categories',
+    'navigation.gamingRecharges': 'Gaming & Recharges',
+    'navigation.software': 'Software & Tools',
+    'navigation.subscriptions': 'Premium Subscriptions',
+
+    // Homepage Sections
+    'homepage.hero.badge': '🚀 Over 1000 digital products available',
+    'homepage.hero.searchPlaceholder': 'Search games, software, subscriptions...',
+    'homepage.categories.title': 'Explore our categories',
+    'homepage.categories.subtitle': 'Find exactly what you\'re looking for',
+    'homepage.categories.viewAll': 'View all categories',
+    'homepage.categories.productsCount': 'products',
+    'homepage.featured.title': 'Featured Products',
+    'homepage.featured.subtitle': 'Our premium recommendations for you',
+    'homepage.featured.viewAll': 'View all',
+    'homepage.new.title': 'New Products',
+    'homepage.bestsellers.title': 'Best-Sellers',
+    'homepage.promotions.title': 'Promotions',
+    'homepage.cta.title': 'Ready to discover our premium products?',
+    'homepage.cta.subtitle': 'Join thousands of satisfied users and instantly access our quality digital products.',
+    'homepage.cta.explore': 'Explore products',
+    'homepage.cta.createAccount': 'Create account',
+
+    // Footer Bottom
+    'footer.copyright': 'All rights reserved.',
+    'footer.marketplace': 'Digital products marketplace',
+    'footer.instantDelivery': 'Instant delivery',
+    'footer.support24': '24/7 Support',
+    'footer.refunds': 'Refund Policy',
+
+    // Common product terms
+    'product.priceUnit': 'DZD',
+    'product.discount': '-%',
+    'product.newBadge': 'New',
+    'product.bestsellerBadge': 'Best-Seller',
+    'product.saleBadge': 'Sale',
+
+    // Cart Page
+    'cart.emptyTitle': 'Your cart is empty',
+    'cart.discoverProducts': 'Discover our products',
+    'cart.myCart': 'My Cart',
+    'cart.clearAll': 'Clear cart',
+    'cart.orderSummary': 'Order Summary',
+
+    // Product Page
+    'product.notFound': 'Product not found',
+    'product.backToCategories': 'Back to categories',
+    'product.home': 'Home',
+    'product.category': 'Category',
+    'product.buyNow': 'Buy now',
+    'product.shareProduct': 'Share this product',
+    'product.copyLink': 'Copy link',
+    'product.linkCopied': 'Link copied!',
+    'product.description': 'Description',
+    'product.specifications': 'Specifications',
+    'product.relatedProducts': 'Related Products',
+    'product.quantity': 'Quantity',
+    'product.addToCartButton': 'Add to cart',
+    'product.addToWishlistButton': 'Add to wishlist',
+    'product.removeFromWishlist': 'Remove from wishlist',
+    'product.garantees.instant': 'Instant delivery',
+    'product.garantees.secure': 'Secure payment',
+    'product.garantees.download': 'Guaranteed download',
+    'product.garantees.support': '24/7 Support',
+    'product.tabs.features': 'Features',
+    'product.tabs.details': 'Details',
+    'product.tabs.reviews': 'Reviews',
+    'product.noFeatures': 'No features specified.',
+    'product.fileSize': 'File size:',
+    'product.supportedPlatforms': 'Supported platforms:',
+    'product.productType': 'Product type:',
+    'product.digitalProduct': 'Digital product',
+    'product.reviewsComingSoon': 'Customer reviews will be available soon.',
+    'product.viewAll': 'View all',
+
+    // Pages
+    'pages.login.title': 'Login',
+    'pages.checkout.title': 'Checkout',
+    'pages.search.title': 'Search',
+    'pages.account.title': 'My Account',
+    'pages.wishlist.title': 'My Wishlist',
+    'pages.inDevelopment': 'Feature under development...',
+    'pages.backToHome': 'Back to home',
+    'pages.backToCart': 'Back to cart',
+    'pages.discoverProducts': 'Discover products',
+    
+    // Missing translations for hardcoded text
+    'categories.searchPlaceholder': 'Search for a category...',
+    'categories.productsAvailable': 'products available',
+    'categories.instantDelivery': 'Instant delivery',
+    'categories.filters': 'Filters',
+    'categories.grid': 'Grid',
+    'categories.list': 'List',
+    'categories.exploreOther': 'Explore other categories',
+    'categories.loadMore': 'Load more products',
   },
   
   ar: {
@@ -198,5 +436,124 @@ export const messages = {
     'badge.sale': 'تخفيض',
     'badge.popular': 'شائع',
     'badge.featured': 'مميز',
+
+    // Auth & Account
+    'auth.login': 'تسجيل الدخول',
+    'auth.logout': 'تسجيل الخروج',
+    'auth.myOrders': 'طلباتي',
+    'auth.createAccount': 'إنشاء حساب',
+
+    // Hero Features
+    'hero.features.instantDelivery.title': 'التسليم الفوري',
+    'hero.features.instantDelivery.description': 'قم بتنزيل منتجاتك فور الشراء',
+    'hero.features.securePayment.title': 'الدفع الآمن',
+    'hero.features.securePayment.description': 'معاملات محمية ومشفرة',
+    'hero.features.support247.title': 'دعم 24/7',
+    'hero.features.support247.description': 'المساعدة متاحة في جميع الأوقات',
+
+    // Footer Features
+    'footer.features.instantDelivery.title': 'التسليم الفوري',
+    'footer.features.instantDelivery.description': 'التنزيل الفوري بعد الشراء',
+    'footer.features.securePayment.title': 'الدفع الآمن',
+    'footer.features.securePayment.description': 'معاملات مشفرة ومحمية',
+    'footer.features.support247.title': 'دعم 24/7',
+    'footer.features.support247.description': 'المساعدة متاحة باستمرار',
+
+    // Navigation Menu
+    'navigation.allCategories': 'جميع الفئات',
+    'navigation.gamingRecharges': 'الألعاب والشحن',
+    'navigation.software': 'البرمجيات والأدوات',
+    'navigation.subscriptions': 'الاشتراكات المميزة',
+
+    // Homepage Sections
+    'homepage.hero.badge': '🚀 أكثر من 1000 منتج رقمي متاح',
+    'homepage.hero.searchPlaceholder': 'البحث عن الألعاب، البرمجيات، الاشتراكات...',
+    'homepage.categories.title': 'استكشف فئاتنا',
+    'homepage.categories.subtitle': 'اعثر على ما تبحث عنه بالضبط',
+    'homepage.categories.viewAll': 'عرض جميع الفئات',
+    'homepage.categories.productsCount': 'منتجات',
+    'homepage.featured.title': 'المنتجات المميزة',
+    'homepage.featured.subtitle': 'توصياتنا المميزة لك',
+    'homepage.featured.viewAll': 'عرض الكل',
+    'homepage.new.title': 'الجديد',
+    'homepage.bestsellers.title': 'الأكثر مبيعاً',
+    'homepage.promotions.title': 'العروض',
+    'homepage.cta.title': 'هل أنت مستعد لاكتشاف منتجاتنا المميزة؟',
+    'homepage.cta.subtitle': 'انضم إلى آلاف المستخدمين الراضين واحصل على منتجاتنا الرقمية عالية الجودة فوراً.',
+    'homepage.cta.explore': 'استكشف المنتجات',
+    'homepage.cta.createAccount': 'إنشاء حساب',
+
+    // Footer Bottom
+    'footer.copyright': 'جميع الحقوق محفوظة.',
+    'footer.marketplace': 'سوق المنتجات الرقمية',
+    'footer.instantDelivery': 'التسليم الفوري',
+    'footer.support24': 'دعم 24/7',
+    'footer.refunds': 'سياسة الاسترداد',
+
+    // Common product terms
+    'product.priceUnit': 'د.ج',
+    'product.discount': '-%',
+    'product.newBadge': 'جديد',
+    'product.bestsellerBadge': 'الأكثر مبيعاً',
+    'product.saleBadge': 'عرض',
+
+    // Cart Page
+    'cart.emptyTitle': 'السلة فارغة',
+    'cart.discoverProducts': 'اكتشف منتجاتنا',
+    'cart.myCart': 'سلة التسوق',
+    'cart.clearAll': 'إفراغ السلة',
+    'cart.orderSummary': 'ملخص الطلب',
+
+    // Product Page
+    'product.notFound': 'المنتج غير موجود',
+    'product.backToCategories': 'العودة للفئات',
+    'product.home': 'الرئيسية',
+    'product.category': 'الفئة',
+    'product.buyNow': 'اشتري الآن',
+    'product.shareProduct': 'مشاركة هذا المنتج',
+    'product.copyLink': 'نسخ الرابط',
+    'product.linkCopied': 'تم نسخ الرابط!',
+    'product.description': 'الوصف',
+    'product.specifications': 'المواصفات',
+    'product.relatedProducts': 'المنتجات المشابهة',
+    'product.quantity': 'الكمية',
+    'product.addToCartButton': 'أضف للسلة',
+    'product.addToWishlistButton': 'أضف للمفضلة',
+    'product.removeFromWishlist': 'إزالة من المفضلة',
+    'product.garantees.instant': 'التسليم الفوري',
+    'product.garantees.secure': 'الدفع الآمن',
+    'product.garantees.download': 'التنزيل المضمون',
+    'product.garantees.support': 'دعم 24/7',
+    'product.tabs.features': 'المميزات',
+    'product.tabs.details': 'التفاصيل',
+    'product.tabs.reviews': 'التقييمات',
+    'product.noFeatures': 'لا توجد مميزات محددة.',
+    'product.fileSize': 'حجم الملف:',
+    'product.supportedPlatforms': 'المنصات المدعومة:',
+    'product.productType': 'نوع المنتج:',
+    'product.digitalProduct': 'منتج رقمي',
+    'product.reviewsComingSoon': 'تقييمات العملاء ستكون متاحة قريباً.',
+    'product.viewAll': 'عرض الكل',
+
+    // Pages
+    'pages.login.title': 'تسجيل الدخول',
+    'pages.checkout.title': 'إتمام الطلب',
+    'pages.search.title': 'البحث',
+    'pages.account.title': 'حسابي',
+    'pages.wishlist.title': 'قائمة المفضلة',
+    'pages.inDevelopment': 'الميزة قيد التطوير...',
+    'pages.backToHome': 'العودة للرئيسية',
+    'pages.backToCart': 'العودة للسلة',
+    'pages.discoverProducts': 'اكتشف المنتجات',
+    
+    // Missing translations for hardcoded text
+    'categories.searchPlaceholder': 'البحث عن فئة...',
+    'categories.productsAvailable': 'منتجات متاحة',
+    'categories.instantDelivery': 'التسليم الفوري',
+    'categories.filters': 'الفلاتر',
+    'categories.grid': 'شبكة',
+    'categories.list': 'قائمة',
+    'categories.exploreOther': 'استكشف فئات أخرى',
+    'categories.loadMore': 'تحميل المزيد من المنتجات',
   }
 } as const;
