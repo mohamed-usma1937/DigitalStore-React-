@@ -72,12 +72,15 @@ export interface Coupon {
 export interface User {
   id: string;
   email: string;
+  firstName?: string;
+  lastName?: string;
   name?: string;
   avatar?: string;
   preferredLanguage: Language;
   preferredCurrency: Currency;
   isAuthenticated: boolean;
   orders: Order[];
+  createdAt?: string;
 }
 
 export interface WishlistItem {
@@ -135,10 +138,14 @@ export interface CartState {
 
 export interface UserState {
   user: User | null;
-  login: (email: string) => void;
+  isLoading: boolean;
+  login: (email: string, password: string) => Promise<boolean>;
+  register: (userData: { firstName: string; lastName: string; email: string; password: string }) => Promise<boolean>;
   logout: () => void;
   updateUser: (updates: Partial<User>) => void;
   addOrder: (order: Order) => void;
+  isAuthenticated: () => boolean;
+  getUser: () => User | null;
 }
 
 export interface WishlistState {
