@@ -1,0 +1,12 @@
+# Ignorer les fichiers temporaires de capture d'écran
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# Garder les captures d'écran principales
+!*.png
+!*.jpg
+!*.jpeg
+!*.webp

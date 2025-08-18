@@ -21,6 +21,28 @@
 - 🎯 **Gestion des catégories** et navigation intuitive
 - ⚡ **Lazy loading** pour une expérience utilisateur fluide
 
+## 📸 Captures d'écran
+
+### 🏠 Page d'accueil
+![Page d'accueil](screenshots/homepage.png)
+*Interface moderne avec navigation intuitive et présentation des produits*
+
+### 🛍️ Galerie des produits
+![Galerie produits](screenshots/products.png)
+*Affichage des produits avec filtres et catégorisation*
+
+### 🛒 Panier d'achat
+![Panier](screenshots/cart.png)
+*Gestion complète du panier avec calcul automatique des prix*
+
+### 📱 Design responsive
+![Responsive](screenshots/responsive.png)
+*Interface adaptée à tous les appareils (mobile, tablette, desktop)*
+
+> 💡 **Conseil** : Ces captures d'écran montrent les fonctionnalités principales de l'application. Pour ajouter de nouvelles captures, placez-les dans le dossier `screenshots/` et mettez à jour cette section.
+
+
+
 ## 🛠️ Technologies utilisées
 
 ### Frontend

@@ -55,26 +55,19 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-dark"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--primary)_0%,_transparent_70%)] opacity-20"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
+            {/* Hero Badge */}
             <Badge variant="new" className="mb-6 animate-pulse-glow">
               {t('homepage.hero.badge')}
             </Badge>
-            
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="gradient-text">{t('hero.title')}</span>
-            </h1>
-            
-            <p className="text-xl text-text-secondary mb-8 leading-relaxed">
-              {t('hero.subtitle')}
-            </p>
 
             {/* Hero Search */}
-            <div className="max-w-2xl mx-auto mb-12">
+            <div className="max-w-2xl mx-auto mb-8">
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-text-muted" />
                 <Input
@@ -82,12 +75,12 @@ const Index = () => {
                   placeholder={t('homepage.hero.searchPlaceholder')}
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full h-14 pl-12 pr-32 bg-background-secondary/50 backdrop-blur-xl border-border text-lg rounded-3xl"
+                  className="w-full h-14 pl-12 pr-32 bg-background-secondary/50 backdrop-blur-xl border-border text-lg rounded-3xl shadow-lg"
                 />
                 <Button
                   variant="hero"
                   size="lg"
-                  className="absolute right-2 top-2 bottom-2 px-8 btn-green-black"
+                  className="absolute right-2 top-2 bottom-2 px-8 btn-green-black shadow-lg"
                   asChild
                 >
                   <Link to={searchQuery ? `/search?q=${encodeURIComponent(searchQuery)}` : '/categories'}>
